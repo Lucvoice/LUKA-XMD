@@ -1,15 +1,15 @@
 <h1 align="center"> LUKA-XMD </h1><p align="center">
-  <a href="https://github.com/TristanCage/LUKA-AI">
-    <img alt="LUKA-AI docs" height="350" src="https://files.catbox.moe/5mmt2y.png">
+  <a href="https://github.com/TristanCage/LUKA-XMD">
+    <img alt="LUKA-XMD docs" height="350" src="https://files.catbox.moe/5mmt2y.png">
   </a>
 </p><p align="center">
-<a href="https://github.com/TristanCage">
-  <img title="Author" src="https://img.shields.io/badge/LUKA--AI-darkgreen?style=for-the-badge&logo=whatsapp">
+<a href="https://github.com/Lucvoice">
+  <img title="Author" src="https://img.shields.io/badge/LUKA--XMD-darkgreen?style=for-the-badge&logo=whatsapp">
 </a>
 </p><p align="center">
     <strong>1. FORK REPOSITORY</strong>
   <br>
-    <a href="https://github.com/TristanCage/LUKA-AI/fork" target="_blank">
+    <a href="https://github.com/Lucvoice/LUKA-XMD/fork" target="_blank">
         <img alt="Fork Repo" src="https://img.shields.io/badge/Fork%20Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkblue&color=darkblue"/>
     </a>
 </p><p align="center">
@@ -21,13 +21,13 @@
 </p><p align="center">
     <strong>3. DEPLOY TO HEROKU</strong>
     <br>
-    <a href="https://dashboard.heroku.com/new?template=https://github.com/TristanCage/LUKA-AI" target="_blank">
+    <a href="https://dashboard.heroku.com/new?template=https://github.com/Lucvoice/LUKA-XMD" target="_blank">
         <img alt="Deploy to heroku" src="https://img.shields.io/badge/Let%27s_Go-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=purple&color=purple"/>
     </a>
 </p><p align="center">
     <strong>4. DOWNLOAD BOT ZIP</strong>
     <br>
-    <a href="https://codeload.github.com/TristanCage/LUKA-AI/zip/refs/heads/main" target="_blank">
+    <a href="https://codeload.github.com/Lucvoice/LUKA-XMD/zip/refs/heads/main" target="_blank">
         <img alt="Download zip" src="https://img.shields.io/badge/Let%27s_Go-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkorange&color=darkorange"/>
     </a>
 </p>
