@@ -2,10 +2,7 @@
   <a href="https://github.com/TristanCage/LUKA-XMD">
     <img alt="LUKA-XMD docs" height="350" src="https://files.catbox.moe/5mmt2y.png">
   </a>
-</p><p align="center">
-<a href="https://github.com/Lucvoice">
-  <img title="Author" src="https://img.shields.io/badge/LUKA--XMD-darkgreen?style=for-the-badge&logo=whatsapp">
-</a>
+
 </p><p align="center">
     <strong>1. FORK REPOSITORY</strong>
   <br>
