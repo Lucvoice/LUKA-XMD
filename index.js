@@ -218,13 +218,17 @@ async function startGifted() {
                             const md =
                                 s.MODE === "public" ? "public" : "private";
                             const connectionMsg = `
-╭━━━〔 ⚡ ${s.BOT_NAME || d.BOT_NAME} 〕━━━╮
-┃ 🟢 *CONNECTED*
-┃ 🔑 Prefix: *${s.PREFIX || d.PREFIX}*
-┃ 🧩 Plugins: *${totalCommands}*
-┃ ⚙️ Mode: *${md}*
-╰━━━━━━━━━━━━━━━━━━╯
-> *${s.CAPTION || d.CAPTION}*`;
+╭╴ ${s.BOT_NAME || d.BOT_NAME} ╶╮
+│
+│ 🟢 ᴄᴏɴɴᴇᴄᴛᴇᴅ : ᴏɴʟɪɴᴇ
+│ 📊 ᴘʟᴜɢɪɴs   : ${totalCommands}
+│ 📌 ᴘʀᴇғɪx    : ${s.PREFIX || d.PREFIX}
+│ 🌐 ᴍᴏᴅᴇ      : ${md}
+│ 👤 ᴏᴡɴᴇʀ     : ${s.OWNER_NUMBER || d.OWNER_NUMBER}
+│ 📢 ᴜᴘᴅᴀᴛᴇs   : ${s.NEWSLETTER_URL || d.NEWSLETTER_URL}
+│
+╰╴✦ ${s.CAPTION || d.CAPTION} ✦╶╯
+`;
 
                             await Gifted.sendMessage(
                                 Gifted.user.id,
