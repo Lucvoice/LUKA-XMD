@@ -1,4 +1,4 @@
-const { gmd } = require("../gift");
+const { gmd } = require("../luka");
 const {
     initNotesDB,
     addNote,
@@ -7,8 +7,8 @@ const {
     updateNote,
     deleteNote,
     deleteAllNotes,
-} = require("../gift/database/notes");
-const { getContextInfo } = require("../gift/contextInfo");
+} = require("../luka/database/notes");
+const { getContextInfo } = require("../luka/contextInfo");
 const { sendButtons } = require("gifted-btns");
 
 const more = String.fromCharCode(8206);
