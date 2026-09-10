@@ -1,4 +1,4 @@
-const { gmd } = require("../gift");
+const { gmd } = require("../luka");
 const {
     createGame,
     joinGame,
@@ -7,7 +7,7 @@ const {
     makeMove,
     endGame,
     initGamesDB,
-} = require("../gift/database/games");
+} = require("../luka/database/games");
 
 const {
     createWcgGame,
@@ -19,7 +19,7 @@ const {
     eliminatePlayer,
     endWcgGame,
     initWcgDB,
-} = require("../gift/database/wcgGame");
+} = require("../luka/database/wcgGame");
 
 const {
     createDiceGame,
@@ -29,7 +29,7 @@ const {
     playerRoll,
     endDiceGame,
     initDiceDB,
-} = require("../gift/database/diceGame");
+} = require("../luka/database/diceGame");
 
 const { 
     clearGameTimeout, 
@@ -44,7 +44,7 @@ const {
     handleAiDiceRoll,
     gameTimeouts,
     diceTimeouts,
-} = require("../gift/gameHandler");
+} = require("../luka/gameHandler");
 
 const {
     wcgTimeouts,
@@ -53,7 +53,7 @@ const {
     setWcgJoinTimeout,
     formatScores,
     getDiceEmoji,
-} = require("../gift/wcg");
+} = require("../luka/wcg");
 
 
 const {
@@ -61,7 +61,7 @@ const {
     rollDice: aiRollDice,
     findBestTttMove,
     BOT_JID,
-} = require("../gift/gameAI");
+} = require("../luka/gameAI");
 
 initGamesDB();
 initWcgDB();
