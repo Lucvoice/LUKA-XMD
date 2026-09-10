@@ -63,7 +63,7 @@ const DEFAULT_SETTINGS = {
     YT: "youtube.com/@lucvoice",
     NEWSLETTER_JID: "120363426409647211@newsletter",
     GC_JID: "EyXMwZx0V556mTYY0eMQ5K",
-    NEWSLETTER_URL: "https://whatsapp.com/channel/0029VbCpYtZLtOj5LDuj7Q1p",
+    NEWSLETTER_URL: "https://whatsapp.com/channel/0029VbCpYtZLtOj5L7Q1p",
     BOT_REPO: "mauricegift/atassa",
     PACK_NAME: "𝐋𝐔𝐊𝐀-𝐗𝐌𝐃",
     PACK_AUTHOR: "𝐋𝐔𝐊𝐀 𝐓𝐄𝐂𝐇",
