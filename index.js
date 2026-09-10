@@ -1,5 +1,5 @@
 require("events").EventEmitter.defaultMaxListeners = 960;
-require("./gift/gmdHelpers");
+require("./luka/gmdHelpers");
 
 const {
     default: giftedConnect,
@@ -73,7 +73,7 @@ const {
     setupConnectionHandler,
     setupGroupEventsListeners,
     initializeLidStore,
-} = require("./gift");
+} = require("./luka");
 
 const {
     saveAntiDelete,
@@ -81,7 +81,7 @@ const {
     removeAntiDelete,
     startCleanup,
     SQLiteStore,
-} = require('./gift/database/messageStore');
+} = require('./luka/database/messageStore');
 
 const config = require("./config");
 const googleTTS = require("google-tts-api");
@@ -101,7 +101,7 @@ async function resolveRealJid(Gifted, jid) {
     if (!jid) return null;
     if (!jid.endsWith('@lid')) return jid;   // already real
     try {
-        const { getLidMapping } = require('./gift/connection/groupCache');
+        const { getLidMapping } = require('./luka/connection/groupCache');
         const cached = getLidMapping(jid);
         if (cached) return cached;
     } catch (_) {}
@@ -110,7 +110,7 @@ async function resolveRealJid(Gifted, jid) {
         if (resolved && !resolved.endsWith('@lid')) return resolved;
     } catch (_) {}
     try {
-        const { getLidMappingFromDb } = require('./gift/database/lidMapping');
+        const { getLidMappingFromDb } = require('./luka/database/lidMapping');
         const fromDb = await getLidMappingFromDb(jid);
         if (fromDb) return fromDb;
     } catch (_) {}
@@ -124,8 +124,8 @@ let Gifted;
 let store;
 
 logger.level = "silent";
-app.use(express.static("gift"));
-app.get("/", (req, res) => res.sendFile(__dirname + "/gift/gifted.html"));
+app.use(express.static("luka"));
+app.get("/", (req, res) => res.sendFile(__dirname + "/luka/gifted.html"));
 app.get("/health", (req, res) =>
     res.status(200).json({ status: "alive", uptime: process.uptime() }),
 );
@@ -145,8 +145,8 @@ setInterval(async () => {
     } catch (e) {}
 }, 240000);
 
-const sessionDir = path.join(__dirname, "gift", "session");
-const pluginsPath = path.join(__dirname, "gifted");
+const sessionDir = path.join(__dirname, "luka", "session");
+const pluginsPath = path.join(__dirname, "lukah");
 
 let botSettings = {};
 async function loadBotSettings() {
@@ -218,23 +218,18 @@ async function startGifted() {
                             const md =
                                 s.MODE === "public" ? "public" : "private";
                             const connectionMsg = `
-╭────────「 *${s.BOT_NAME || d.BOT_NAME}* 」────────╮
-│
-│ 🟢 *𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃* ✓
-│
-│ 📌 Prefix   : *[ ${s.PREFIX || d.PREFIX} ]*
-│ 📊 Plugins  : *${totalCommands}*
-│ 🌐 Mode     : *${md}*
-│ 👤 Owner    : *${s.OWNER_NUMBER || d.OWNER_NUMBER}*
-│ 📚 Tutorials: *${s.YT || d.YT}*
-│ 📢 Updates  : *${s.NEWSLETTER_URL || d.NEWSLETTER_URL}*
-│
-╰───────────────╯
+*${s.BOT_NAME || d.BOT_NAME} 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃*
 
-> _𝐍𝐨𝐭𝐞: Bot may take a few seconds/minutes to sync before being ready to use._
+𝐏𝐫𝐞𝐟𝐢𝐱       : *[ ${s.PREFIX || d.PREFIX} ]*
+𝐏𝐥𝐮𝐠𝐢𝐧𝐬      : *${totalCommands}*
+𝐌𝐨𝐝𝐞        : *${md}*
+𝐎𝐰𝐧𝐞𝐫       : *${s.OWNER_NUMBER || d.OWNER_NUMBER}*
+𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥𝐬     : *${s.YT || d.YT}*
+𝐔𝐩𝐝𝐚𝐭𝐞𝐬      : *${s.NEWSLETTER_URL || d.NEWSLETTER_URL}*
 
-> *${s.CAPTION || d.CAPTION}*
-`;
+𝐍𝐨𝐭𝐞:  Bot may take some few seconds/minutes to sync before being ready to use.
+
+> *${s.CAPTION || d.CAPTION}*`;
 
                             await Gifted.sendMessage(
                                 Gifted.user.id,
