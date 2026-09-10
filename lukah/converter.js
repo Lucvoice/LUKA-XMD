@@ -1,4 +1,4 @@
-const { gmd, toAudio, toVideo, toPtt, stickerToImage, gmdFancy, gmdRandom, getSetting, runFFmpeg, getVideoDuration, gmdSticker } = require("../gift");
+const { gmd, toAudio, toVideo, toPtt, stickerToImage, gmdFancy, gmdRandom, getSetting, runFFmpeg, getVideoDuration, gmdSticker } = require("../luka");
 const fs = require("fs").promises;
 const { StickerTypes } = require("wa-sticker-formatter");
 
