@@ -1,26 +1,26 @@
-const { gmd, commands } = require("../gift/gmdCmds");
+const { gmd, commands } = require("../luka/gmdCmds");
 const {
   getSetting,
   setSetting,
   getAllSettings,
   resetSetting,
   resetAllSettings,
-} = require("../gift/database/settings");
+} = require("../luka/database/settings");
 const {
   getGroupSetting,
   setGroupSetting,
   getEnabledGroupSettings,
   resetAllGroupSettings,
   getAllGroupSettings,
-} = require("../gift/database/groupSettings");
-const { getSudoNumbers, clearAllSudo } = require("../gift/database/sudo");
+} = require("../luka/database/groupSettings");
+const { getSudoNumbers, clearAllSudo } = require("../luka/database/sudo");
 const {
   getAllUsersNotes,
   deleteNoteById,
   updateNoteById,
   deleteAllNotes,
   NotesDB,
-} = require("../gift/database/notes");
+} = require("../luka/database/notes");
 
 function parseBooleanInput(input) {
   if (!input) return null;
