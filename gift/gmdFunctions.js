@@ -426,8 +426,8 @@ async function loadSession() {
         let sessionId = config.SESSION_ID;
         const [headerCheck, b64Check] = sessionId.split('~');
 
-        if (headerCheck !== "Gifted" || !b64Check) {
-            throw new Error("❌ Invalid session format. Expected 'Gifted~.....'");
+        if (headerCheck !== "LUKA" || !b64Check) {
+            throw new Error("❌ Invalid session format. Expected 'LUKA~.....'");
         }
 
         if (!b64Check.startsWith('H4sI')) {
@@ -442,8 +442,8 @@ async function loadSession() {
 
         const [header, b64data] = sessionId.split('~');
 
-        if (header !== "Gifted" || !b64data) {
-            throw new Error("❌ Invalid session format. Expected 'Gifted~.....'");
+        if (header !== "LUKA" || !b64data) {
+            throw new Error("❌ Invalid session format. Expected 'LUKA~.....'");
         }
 
         const cleanB64 = b64data.replace('...', '');
