@@ -229,8 +229,7 @@ async function startGifted() {
 │
 ╰╴✦ ${s.CAPTION || d.CAPTION} ✦╶╯
 
-𝐍𝐨𝐭𝐞:  Bot may take some few seconds/minutes to sync before being ready to use.
-
+𝐍𝐨𝐭𝐞:  Bot may take some a few seconds/minutes to sync before being ready to use.
 `;
 
                             await Gifted.sendMessage(
