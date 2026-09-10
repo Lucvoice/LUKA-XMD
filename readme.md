@@ -1,6 +1,6 @@
 <h1 align="center"> LUKA-XMD </h1><p align="center">
   <a href="https://github.com/TristanCage/LUKA-XMD">
-    <img alt="LUKA-XMD docs" height="350" src="https://files.catbox.moe/5mmt2y.png">
+    <img alt="LUKA-XMD docs" height="350" src="https://i.imgur.com/R6EGtXm.jpeg">
   </a>
 
 </p><p align="center">
