@@ -1,8 +1,8 @@
-const { gmd } = require("../gift");
+const { gmd } = require("../luka");
 const {
     getLidMapping,
     getGroupMetadata,
-} = require("../gift/connection/groupCache");
+} = require("../luka/connection/groupCache");
 
 function getUserName(jid) {
     return jid.split("@")[0];
