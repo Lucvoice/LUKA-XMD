@@ -228,6 +228,9 @@ async function startGifted() {
 │ 📢 ᴜᴘᴅᴀᴛᴇs   : ${s.NEWSLETTER_URL || d.NEWSLETTER_URL}
 │
 ╰╴✦ ${s.CAPTION || d.CAPTION} ✦╶╯
+
+𝐍𝐨𝐭𝐞:  Bot may take some few seconds/minutes to sync before being ready to use.
+
 `;
 
                             await Gifted.sendMessage(
