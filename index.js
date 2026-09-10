@@ -218,17 +218,12 @@ async function startGifted() {
                             const md =
                                 s.MODE === "public" ? "public" : "private";
                             const connectionMsg = `
-*${s.BOT_NAME || d.BOT_NAME} 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃*
-
-𝐏𝐫𝐞𝐟𝐢𝐱       : *[ ${s.PREFIX || d.PREFIX} ]*
-𝐏𝐥𝐮𝐠𝐢𝐧𝐬      : *${totalCommands}*
-𝐌𝐨𝐝𝐞        : *${md}*
-𝐎𝐰𝐧𝐞𝐫       : *${s.OWNER_NUMBER || d.OWNER_NUMBER}*
-𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥𝐬     : *${s.YT || d.YT}*
-𝐔𝐩𝐝𝐚𝐭𝐞𝐬      : *${s.NEWSLETTER_URL || d.NEWSLETTER_URL}*
-
-𝐍𝐨𝐭𝐞:  Bot may take some few seconds/minutes to sync before being ready to use.
-
+╭━━━〔 ⚡ ${s.BOT_NAME || d.BOT_NAME} 〕━━━╮
+┃ 🟢 *CONNECTED*
+┃ 🔑 Prefix: *${s.PREFIX || d.PREFIX}*
+┃ 🧩 Plugins: *${totalCommands}*
+┃ ⚙️ Mode: *${md}*
+╰━━━━━━━━━━━━━━━━━━╯
 > *${s.CAPTION || d.CAPTION}*`;
 
                             await Gifted.sendMessage(
