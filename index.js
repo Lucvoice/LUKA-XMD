@@ -218,7 +218,7 @@ async function startGifted() {
                             const md =
                                 s.MODE === "public" ? "public" : "private";
                             const connectionMsg = `
-╭──────「 *${s.BOT_NAME || d.BOT_NAME}* 」──────╮
+╭────「 *${s.BOT_NAME || d.BOT_NAME}* 」────╮
 │ 🟢 Status  : ✅ CONNECTED
 │ 📊 Plugins : ${totalCommands}
 │ 📌 Prefix  : ${s.PREFIX || d.PREFIX}
