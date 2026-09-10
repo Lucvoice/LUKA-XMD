@@ -35,7 +35,7 @@ const DEFAULT_SETTINGS = {
     OWNER_NUMBER: "255768619068",
     BOT_NAME: "𝐋𝐔𝐊𝐀-𝐗𝐌𝐃",
     FOOTER: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴜᴋᴀʙʀᴀɴᴅ",
-    CAPTION: "©𝟐𝟎𝟐𝟓 𝐋𝐔𝐊𝐀-𝐗𝐌𝐃 𝐕𝟓",
+    CAPTION: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʟᴜᴋᴀʙʀᴀɴᴅ",
     BOT_PIC: "https://i.imgur.com/FMp7ioz.png",
     VERSION: packageJson.version || "5.0.0",
     MODE: config.MODE || "public",
