@@ -76,15 +76,15 @@ function setupConsoleFilters() {
 setupConsoleFilters();
 
 const createContext = async (userJid, options = {}) => {
-    const botName = (await getSetting("BOT_NAME")) || "𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃";
+    const botName = (await getSetting("BOT_NAME")) || "𝐋𝐔𝐊𝐀 𝐗𝐌𝐃";
     const botPic =
         (await getSetting("BOT_PIC")) ||
-        "https://gitcdn.gifted.co.ke/image/AZO_image.jpg";
+        "https://i.imgur.com/FMp7ioz.png";
     const newsletterJid =
         (await getSetting("NEWSLETTER_JID")) || "120363426409647211@newsletter";
     const newsletterUrl =
         (await getSetting("NEWSLETTER_URL")) ||
-        "https://whatsapp.com/channel/0029VbCpYtZLtOj5LDuj7Q1p";
+        "https://whatsapp.com/channel/0029VbCpYtZLtOj5LDuj7";
 
     return {
         contextInfo: {
@@ -114,10 +114,10 @@ const createContext = async (userJid, options = {}) => {
 };
 
 const createContext2 = async (userJid, options = {}) => {
-    const botName = (await getSetting("BOT_NAME")) || "𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃";
+    const botName = (await getSetting("BOT_NAME")) || "𝐋𝐔𝐊𝐀 𝐗𝐌𝐃";
     const botPic =
         (await getSetting("BOT_PIC")) ||
-        "https://gitcdn.gifted.co.ke/image/AZO_image.jpg";
+        "https://i.imgur.com/FMp7ioz.png";
     const newsletterJid =
         (await getSetting("NEWSLETTER_JID")) || "120363426409647211@newsletter";
 
@@ -133,7 +133,7 @@ const createContext2 = async (userJid, options = {}) => {
             },
             externalAdReply: {
                 title: options.title || botName,
-                body: options.body || "Powered by Gifted Tech",
+                body: options.body || "Powered by Luka Tech",
                 thumbnailUrl: botPic,
                 mediaType: 1,
                 showAdAttribution: true,
