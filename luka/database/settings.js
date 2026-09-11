@@ -65,7 +65,7 @@ const DEFAULT_SETTINGS = {
     GC_JID: "EyXMwZx0V556mTYY0eMQ5K",
     NEWSLETTER_URL: "https://whatsapp.com/channel/0029VbCpYtZLtOj5L7Q1p",
     BOT_REPO: "mauricegift/atassa",
-    PACK_NAME: "𝐋𝐔𝐊𝐀-𝐗𝐌𝐃",
+    PACK_NAME: "LUKA-XMD",
     PACK_AUTHOR: "𝐋𝐔𝐊𝐀 𝐓𝐄𝐂𝐇",
     SUDO_NUMBERS: "",
     PM_PERMIT: "false",
